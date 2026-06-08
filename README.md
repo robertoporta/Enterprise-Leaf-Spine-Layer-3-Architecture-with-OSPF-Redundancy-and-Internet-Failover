@@ -1,6 +1,6 @@
 # <p align="center">
 <h1>Leaf–Spine Layer 3 Architecture with OSPF Redundancy and Internet Failover</h1>
-This lab builds and configures a full leaf–spine Layer 3 network topology with dual spine switches, dual leaf switches, VLAN segmentation, and OSPF dynamic routing for end-to-end connectivity. The spine switches act as the core, while the leaf switches provide access-layer connectivity for end devices.
+- This lab builds and configures a full leaf–spine Layer 3 network topology with dual spine switches, dual leaf switches, VLAN segmentation, and OSPF dynamic routing for end-to-end connectivity. The spine switches act as the core, while the leaf switches provide access-layer connectivity for end devices.
 All links use /30 subnets, and OSPF advertises only directly connected networks for precise routing. Redundant uplinks ensure high availability. An ISP router simulates internet connectivity using a loopback address (8.8.8.8), allowing verification of external reachability from within the network. The following image shows what the topology looks like after the initial cable connections, pre-configuration.
 </p>
 <p>
@@ -49,7 +49,7 @@ Next, I configure and enable two additional interfaces toward SPINE1 and SPINE2 
 <br />
 
 <p>
-To finish on SPINE2, I enable OSPF on SPINE2 so it can participate in the shared dynamic routing domain across the spine and leaf architecture.
+- To finish on SPINE2, I enable OSPF on SPINE2 so it can participate in the shared dynamic routing domain across the spine and leaf architecture.
 </p>
 <p>
 <img width="893" height="155" alt="image" src="https://github.com/user-attachments/assets/d8e80ed5-4ed7-4419-9383-47c8315c1141" />
